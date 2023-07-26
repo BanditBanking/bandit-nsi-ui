@@ -1,0 +1,141 @@
+@import '../../constants/theme/Main.module.scss';
+
+.main {
+    display: flex;
+    justify-content: center;
+
+    .studyContainer {
+        width: 70%;
+        padding: 20px;
+        margin-top: 40px;
+
+        h1 {
+            color: $bg2;
+        }
+
+        .tags {
+            display: flex;
+
+            .tag {
+                margin-right: 5px;
+                background-color: $bg2;
+                padding: 2px 5px;
+                border-radius: 5px;
+
+                span {
+                    color: $bg1;
+                    font-family: 'roboto';
+                    font-weight: 300;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .mdContainer {
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: end;
+
+            .control {
+                width: 150px;
+                margin-left: 10px;
+
+                &.locked {
+                    background-color: #003B364A;
+                    cursor: not-allowed;
+                }
+            }
+        }
+
+        .commentSection {
+            margin-top: 50px;
+
+            .comment {
+                background-color: $bg1;
+                padding: 10px;
+                margin-bottom: 20px;
+                filter: drop-shadow(5px 5px 0px #01262294);
+
+                .commentHeader {
+                    margin-bottom: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .username {
+                        font-weight: 700;
+                        margin-right: 10px;
+                    }
+
+                    .date {
+                        font-size: 14px;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+
+            .commentForm {
+
+                textarea {
+                    width: calc(100% - 7px);
+                    margin-bottom: 15px;
+                    resize: vertical;
+                }
+
+                .controls {
+                    display: flex;
+                    justify-content: end;
+
+                    .commentBtn {
+                        outline: none;
+                        border: none;
+                        padding: 10px;
+                        background-color: $bg2;
+                        font-family: "merriweather";
+                        color: $bg1;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.titleInput,
+.titleInput:focus,
+.desciptionInput,
+.desciptionInput:focus,
+.tagsInput,
+.tagsInput:focus {
+    border: 0;
+    outline: none;
+    font-size: 36px;
+    font-family: 'merriweather';
+    color: $bg2;
+    width: 100%;
+}
+
+.titleInput {
+    font-size: 36px;
+}
+
+.desciptionInput,
+.desciptionInput:focus {
+    font-size: 20px;
+}
+
+.tagsInput,
+.tagsInput:focus {
+    font-size: 14px;
+}
+
+.mdEditor {
+    margin-top: 20px;
+}

@@ -1,0 +1,35 @@
+@import '../../constants/theme/Main.module.scss';
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+
+    .publicationsContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(200px, auto);
+
+        >div {
+            width: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main {
+        .publicationsContainer {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main {
+        .publicationsContainer {
+            grid-template-columns: 1fr;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@import '../../constants/theme/Main.module.scss';
+
+.main {
+    height: calc(100vh - 162px);
+    background-color: $bg1;
+    display: flex;
+    justify-content: center;
+
+    .editor {
+        background-color: white;
+        width: 100%;
+        padding: 40px;
+        overflow-y: scroll;
+
+        .titleInput,
+        .titleInput:focus,
+        .desciptionInput,
+        .desciptionInput:focus,
+        .tagsInput,
+        .tagsInput:focus {
+            border: 0;
+            outline: none;
+            font-size: 36px;
+            font-family: 'merriweather';
+            color: $bg2;
+            width: 100%;
+        }
+
+        .titleInput {
+            font-size: 36px;
+        }
+
+        .desciptionInput,
+        .desciptionInput:focus {
+            font-size: 20px;
+        }
+
+        .tagsInput,
+        .tagsInput:focus {
+            font-size: 14px;
+        }
+
+        .mdEditor {
+            margin-top: 20px;
+        }
+
+        .controlSection {
+            margin-top: 20px;
+            display: flex;
+            justify-content: end;
+
+            button {
+                outline: none;
+                border: none;
+                background-color: $bg2;
+                color: $bg1;
+                font-family: 'merriweather';
+                padding: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}

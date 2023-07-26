@@ -1,0 +1,38 @@
+@import '../../constants/theme/Main.module.scss';
+
+.main {
+    display: flex;
+    justify-content: center;
+
+    .studyContainer {
+        width: 70%;
+        padding: 20px;
+
+        h1 {
+            color: $bg2;
+        }
+
+        .tags {
+            display: flex;
+
+            .tag {
+                margin-right: 5px;
+                background-color: $bg2;
+                padding: 2px 5px;
+                border-radius: 5px;
+
+                span {
+                    color: $bg1;
+                    font-family: 'roboto';
+                    font-weight: 300;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .mdContainer {
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+    }
+}

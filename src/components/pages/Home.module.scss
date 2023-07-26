@@ -1,0 +1,87 @@
+@import '../../constants/theme/Main.module.scss';
+
+.heroBanner {
+    position: relative;
+    height: 150px;
+    background-color: $bg1;
+    display: flex;
+    padding: 60px 5%;
+    z-index: 0;
+
+    .tagLineContainer {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .tagLine,
+        .subTagLine {
+            color: $bg2;
+            margin: 0;
+        }
+
+        .tagLine {
+            font-weight: 700;
+            font-size: 36px;
+        }
+
+        .subTagLine {
+            font-weight: 400;
+            font-size: 28px;
+            margin-top: 10px;
+        }
+    }
+
+    .barsContainer {
+        position: absolute;
+        bottom: -3px;
+        right: calc(5%);
+        z-index: 1;
+
+        img {
+            width: min(20vw, 400px);
+        }
+    }
+}
+
+.main {
+    padding: 40px 5%;
+
+    .cardTitleContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px 0;
+
+        h3 {
+            margin: 0;
+            font-size: 34px;
+            color: $bg2;
+        }
+
+        .seeMoreContainer {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            span {
+                font-weight: 700;
+                font-size: 20px;
+                color: $bg2;
+                margin-right: 10px;
+            }
+
+            .icon {
+                height: 24px;
+            }
+        }
+    }
+
+    .cardsContainer {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px -20px 20px -20px;
+        overflow-y: scroll;
+        ;
+    }
+}

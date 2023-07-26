@@ -1,0 +1,54 @@
+@import '../../constants/theme/Main.module.scss';
+
+.main {
+    display: flex;
+    justify-content: center;
+
+    .mainContainer {
+        margin-top: 30px;
+        width: 70%;
+
+        .publicationsContainer {
+            margin-bottom: 20px;
+
+            .publication {
+                padding: 10px 20px;
+                margin: 20px 0;
+                background-color: $bg1;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                filter: drop-shadow(5px 5px 0px #01262294);
+
+                p {
+                    margin: 0;
+
+                    .title {
+                        font-weight: 700;
+                        font-size: 20px;
+                        margin-right: 10px;
+                    }
+
+                    .metadata {
+                        font-size: 12px;
+                    }
+                }
+
+                .eye {
+                    display: none
+                }
+
+                &:hover {
+                    .eye {
+                        display: block
+                    }
+                }
+            }
+        }
+    }
+}
+
+.addBtn {
+    margin-bottom: 20px;
+}
